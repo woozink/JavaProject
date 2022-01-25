@@ -85,7 +85,7 @@ class Bird extends Animal implements Flyable {
 
 class Cat extends Animal {
     public Cat(int age, String name, String type) {
-        super(age, name, type);
+        super(age, name, "Cat");
     }
 
     @Override
