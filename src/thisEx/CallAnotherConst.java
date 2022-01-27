@@ -15,7 +15,7 @@ class Person{
 
 public class CallAnotherConst {
     public static void main(String[] args) {
-        Person noName = new Person();
+        Person1 noName = new Person1();
         System.out.println(noName.name);
         System.out.println(noName.age);
     }
