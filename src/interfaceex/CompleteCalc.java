@@ -12,6 +12,12 @@ public class CompleteCalc extends Calculator {
             return Calc.ERROR;
     }
 
+    @Override
+    public void description() {
+        System.out.println("나 비뀐당.");
+        super.description();
+    }
+
     public void showInfo(){
         System.out.println("clac 인터페이스를 구현하였습니다.");
     }

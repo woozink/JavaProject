@@ -9,5 +9,24 @@ public interface Calc {
     int times(int num1, int num2);
     int divides(int num1, int num2);
 
+    default void description(){
+        System.out.println("정수 계산기를 구현합니다.");
+        myMethod(); // 디폴트에서 프라이베이트 호출
+    }
 
+    static int total(int[] arr){
+        int total =0;
+
+        for(int i : arr){
+            total += i;
+        }
+        myStaticMethod();
+        return total;
+    }
+    private void myMethod(){
+        System.out.println("private 메서드 입니다.");
+    }
+    private static void myStaticMethod(){
+        System.out.println("private 메서드입니다.");
+    }
 }
